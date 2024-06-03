@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مثال على طباعة القيمة في الكونسول</title>
+</head>
+<body>
+    <button id="printValueButton" value="القيمة المراد طباعتها">اضغط هنا لطباعة القيمة</button>
+
+    <script>
+        document.getElementById("printValueButton").onclick = function () {
+            console.log(this.value);
+        };
+    </script>
+</body>
+</html>
+<!-- 
+لتحديد الصفحة الحالية التي تتعامل معها في JavaScript، يمكنك استخدام خصائص window.location المختلفة. على سبيل المثال، يمكنك استخدام window.location.pathname للحصول على مسار URL للصفحة الحالية، أو window.location.href للحصول على URL الكامل. بناءً على هذه المعلومات، يمكنك تنفيذ منطق مختلف لكل صفحة.
+
+إليك بعض الأمثلة التي توضح كيفية تحديد الصفحة الحالية:
+
+استخدام window.location.pathname
+html
+Copy code
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مثال على تحديد الصفحة</title>
+</head>
+<body>
+    <script>
+        var currentPath = window.location.pathname;
+
+        if (currentPath === '/page1.html') {
+            console.log('أنت في الصفحة الأولى');
+            // تنفيذ منطق خاص بالصفحة الأولى
+        } else if (currentPath === '/page2.html') {
+            console.log('أنت في الصفحة الثانية');
+            // تنفيذ منطق خاص بالصفحة الثانية
+        } else {
+            console.log('أنت في صفحة أخرى');
+            // تنفيذ منطق عام للصفحات الأخرى
+        }
+    </script>
+</body>
+</html>
+استخدام window.location.href
+html
+Copy code
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مثال على تحديد الصفحة</title>
+</head>
+<body>
+    <script>
+        var currentUrl = window.location.href;
+
+        if (currentUrl.includes('page1.html')) {
+            console.log('أنت في الصفحة الأولى');
+            // تنفيذ منطق خاص بالصفحة الأولى
+        } else if (currentUrl.includes('page2.html')) {
+            console.log('أنت في الصفحة الثانية');
+            // تنفيذ منطق خاص بالصفحة الثانية
+        } else {
+            console.log('أنت في صفحة أخرى');
+            // تنفيذ منطق عام للصفحات الأخرى
+        }
+    </script>
+</body>
+</html>
+استخدام document.title
+إذا كان عنوان الصفحة (Title) محددًا ويختلف بين الصفحات، يمكنك استخدام document.title لتحديد الصفحة:
+
+html
+Copy code
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الصفحة الأولى</title>
+</head>
+<body>
+    <script>
+        var pageTitle = document.title;
+
+        if (pageTitle === 'الصفحة الأولى') {
+            console.log('أنت في الصفحة الأولى');
+            // تنفيذ منطق خاص بالصفحة الأولى
+        } else if (pageTitle === 'الصفحة الثانية') {
+            console.log('أنت في الصفحة الثانية');
+            // تنفيذ منطق خاص بالصفحة الثانية
+        } else {
+            console.log('أنت في صفحة أخرى');
+            // تنفيذ منطق عام للصفحات الأخرى
+        }
+    </script>
+</body>
+</html>
+يمكنك اختيار الطريقة التي تناسبك بناءً على هيكل موقعك وكيفية تمييز الصفحات المختلفة. -->
+
+
+
+
+
+

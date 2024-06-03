@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>interactive rating component</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./image/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/index.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="imgae">
+      <img src="./image/icon-star.svg">
+    </div>
+    <h1>How did we do?</h1>
+    <p>Please let us know how we did with your support request. All feedback is appreciated 
+      to help us improve our offering!</p>
+    <div class="number">
+      <div class="box" id="mydiv1" onclick="handclick(1)">
+        <span>1</span>
+      </div>
+      <div class="box" id="mydiv2" onclick="handclick(2)">
+        <span>2</span>
+      </div>
+      <div class="box" id="mydiv3" onclick="handclick(3)">
+        <span>3</span>
+      </div>
+      <div class="box" id="mydiv4" onclick="handclick(4)">
+        <span>4</span>
+      </div>
+      <div class="box" id="mydiv5" onclick="handclick(5)">
+        <span>5</span>
+      </div>
+      <div class="botton">
+        <span></span>
+      </div>
+    </div>
+    <button id="submit" onclick="submitt()">Submit</button>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
